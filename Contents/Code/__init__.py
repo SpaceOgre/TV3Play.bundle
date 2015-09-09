@@ -41,6 +41,7 @@ def Start():
 # This main function will setup the displayed items.
 @handler(VIDEO_PREFIX, L('Title'), ICON, ART)
 def MainMenu():
+    global BASE_URL
 
     country = Prefs['site']
     if (country == "SE"):
